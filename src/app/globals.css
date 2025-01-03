@@ -15,8 +15,16 @@
   }
   body {
     width: 100%;
+    background: #000;
+  }
+  p {
+    color: aliceblue;
   }
   body::-webkit-scrollbar {
     display: none;
   }
+  .c-shadow {
+    box-shadow: 0px -16px 107px -42px #fff;
+  }
+
 }
