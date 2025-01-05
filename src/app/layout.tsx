@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import 'atropos/css'
+import "atropos/css";
+import Footer from "@/components/templates/Footer";
 
 const font = localFont({
   variable: "--font-BYekan",
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${font.variable}`}>{children}</body>
+      <body className={`${font.variable}`}>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
